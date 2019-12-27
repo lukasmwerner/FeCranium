@@ -1,3 +1,4 @@
+#! /usr/bin/python3
 from flask import Flask, escape, request
 from gpiozero import Servo
 
