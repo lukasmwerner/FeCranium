@@ -8,6 +8,10 @@ servo = Servo(4)
 def setAngle(angle):
     servo.value = angle
 
+@app.route('/test', methods=['GET', 'POST'])
+def test():
+    return "We are online! Ayyy!"
+
 @app.route('/open', methods=['POST'])
 def open():
     print("opening...")
