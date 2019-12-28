@@ -16,11 +16,13 @@ def test():
 @app.route('/open', methods=['POST'])
 def open():
     print("opening...")
+    servo.max()
     return "Sucsess on opening!"
 
 @app.route('/close', methods=['POST'])
 def close():
     print("closing...")
+    servo.min()
     return "Sucsess on closing!"
 
 if __name__ == "__main__":
